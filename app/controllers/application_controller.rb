@@ -8,6 +8,6 @@ class App < Sinatra::Base
     end
 
     post '/teams' do
-      params
+      params.inspect
     end
 end
