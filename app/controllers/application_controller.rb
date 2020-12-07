@@ -8,7 +8,7 @@ class App < Sinatra::Base
     end
 
     post '/teams' do
-      team = Team.Create(params)
-
+      team = Team.create(params)
+      redirect "/teams"
     end
 end
