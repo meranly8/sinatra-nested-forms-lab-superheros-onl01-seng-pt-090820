@@ -8,8 +8,7 @@ class App < Sinatra::Base
     end
 
     post '/teams' do
-      binding.pry
-      params.inspect
+      team = Team.Create(params)
 
     end
 end
