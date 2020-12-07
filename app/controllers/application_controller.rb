@@ -8,9 +8,8 @@ class App < Sinatra::Base
     end
 
     post '/teams' do
-      binding.pry
-      team = Team.create(params)
+      new_team = params[:team]
       #binding.pry
-      redirect "/teams"
+      erb :team
     end
 end
