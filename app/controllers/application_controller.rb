@@ -8,6 +8,8 @@ class App < Sinatra::Base
     end
 
     post '/teams' do
+      binding.pry
       params.inspect
+
     end
 end
