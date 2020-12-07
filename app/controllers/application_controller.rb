@@ -8,8 +8,9 @@ class App < Sinatra::Base
     end
 
     post '/teams' do
-      team = Team.create(params)
       binding.pry
+      team = Team.create(params)
+      #binding.pry
       redirect "/teams"
     end
 end
